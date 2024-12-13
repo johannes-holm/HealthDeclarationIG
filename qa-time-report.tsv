@@ -1,6 +1,11 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-\fsh-generated\resources\ImplementationGuide-ig-ee-healthdeclarationtest.json	2411	-	0	0	0	0	0	0	0	151	0	0	0	0	0	0	0	0	0	0	81	165	0	0	0	1	0	0	0
-fsh-generated/resources/Patient-PatientExample.json	248	31	1	0	0	1	0	0	0	10	0	0	0	0	0	0	0	0	0	0	20	24	0	0	0	0	0	0	0
-fsh-generated/resources/Questionnaire-NaidisKusimustik.json	36263	47	0	0	0	0	0	0	16	109	0	0	0	0	0	0	0	1	0	0	693	224	0	0	0	0	16	0	1
-fsh-generated/resources/StructureDefinition-Kusimustik.json	4413	31	0	0	0	0	0	179	0	107	0	0	0	0	0	0	0	2	0	0	530	9174	0	0	0	1	15	0	1
-fsh-generated/resources/StructureDefinition-MyPatient.json	1275	16	0	0	0	0	0	78	0	30	0	0	0	0	0	0	0	0	0	0	250	4297	0	0	0	0	16	0	1
+\fsh-generated\resources\ImplementationGuide-ig-ee-healthdeclarationtest.json	3920	-	0	0	0	0	0	0	0	170	0	0	0	0	0	0	0	16	0	0	108	129	0	0	0	0	2	0	0
+fsh-generated/resources/Patient-PatientExample.json	248	15	1	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	29	34	0	0	0	0	0	0	0
+fsh-generated/resources/Patient-katipiiriylene.json	337	34	0	0	0	0	0	0	0	692	0	0	0	0	0	0	0	0	0	0	20	32	0	0	0	0	0	0	0
+fsh-generated/resources/Questionnaire-ExampleHDECLQuestionnaire.json	70824	77	0	0	0	0	0	0	0	266	0	0	0	0	0	0	0	0	0	0	1297	382	0	0	0	0	19	0	0
+fsh-generated/resources/QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.json	4270	16	0	0	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	110	59	0	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-HDECLQuestionnaire.json	4438	15	0	0	0	0	0	128	0	78	0	0	0	0	0	0	0	0	0	0	483	8527	0	0	0	0	15	0	0
+fsh-generated/resources/StructureDefinition-HDECLQuestionnaireResponse.json	3340	16	1	0	0	0	0	69	0	31	0	0	0	0	0	0	0	0	0	0	312	3891	0	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-MyPatient.json	1275	16	0	0	0	0	0	44	15	32	0	0	0	0	0	0	0	4	0	0	219	4063	0	0	0	0	16	0	0
+fsh-generated/resources/StructureDefinition-authorization-type.json	2234	15	0	0	0	0	0	16	0	62	0	0	0	0	0	0	0	0	0	0	188	796	0	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-response-expiration.json	2003	16	0	0	0	0	0	16	0	16	0	0	0	0	0	0	0	0	0	0	78	766	0	0	0	0	0	0	0

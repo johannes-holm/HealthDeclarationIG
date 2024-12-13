@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="HealthDeclarationTestIG"/>
   <status value="draft"/>
-  <date value="2024-12-06T15:43:10+02:00"/>
+  <date value="2024-12-13T11:21:42+02:00"/>
   <publisher value="TEHIK"/>
   <contact>
     <name value="TEHIK"/>
@@ -43,13 +43,59 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/authorization-type"/>
+      </reference>
+      <name value="Authorization type and identifier"/>
+      <description value="Volitatud töötaja volituse andmed (volituse number ja liik)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/ExampleHDECLQuestionnaire"/>
+      </reference>
+      <name value="ExampleHDECLQuestionnaire"/>
+      <description value="Näidis tervisedeklaratsiooni andmestik"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/HDECLQuestionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/ExampleHDECLQuestionnaireResponse"/>
+      </reference>
+      <name value="ExampleHDECLQuestionnaireResponse"/>
+      <description value="Näidis andmestik küsimustikust vastusest"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/HDECLQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Kusimustik"/>
+        <reference value="StructureDefinition/HDECLQuestionnaire"/>
       </reference>
-      <name value="Kusimustik"/>
-      <description value="esimene katsetus questionnaire ressursiga"/>
+      <name value="HDECLQuestionnaire"/>
+      <description value="Tervisedeklaratsiooni küsimustiku profiil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/HDECLQuestionnaireResponse"/>
+      </reference>
+      <name value="HDECLQuestionnaireResponse"/>
+      <description value="Tervisedeklaratsiooni küsimustiku vastuse profiil"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -65,18 +111,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/NaidisKusimustik"/>
-      </reference>
-      <name value="NaidisKusimustik"/>
-      <description value="Näidis andmestik küsimustikust"/>
-      <isExample value="true"/>
-      <profile value="https://fhir.ee/StructureDefinition/Kusimustik"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -86,6 +120,28 @@
       <description value="An example of a patient with a license to krill."/>
       <isExample value="true"/>
       <profile value="https://fhir.ee/StructureDefinition/MyPatient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/katipiiriylene"/>
+      </reference>
+      <name value="QuestionnairePatient"/>
+      <description value="Patsient erinevate identifikaatoritega"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/response-expiration"/>
+      </reference>
+      <name value="Response Expiration"/>
+      <description value="Indicates the date on which this QuestionnaireResponse is considered expired."/>
+      <isExample value="false"/>
     </resource>
     <page>
       <sourceUrl value="toc.html"/>

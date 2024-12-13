@@ -7,17 +7,24 @@
     "name" : "HealthDeclarationTestIG"
   },
   {
-    "id" : "NaidisKusimustik",
+    "id" : "ExampleHDECLQuestionnaire",
     "type" : "Questionnaire",
-    "url" : "https://fhir.ee/Questionnaire/NaidisKusimustik",
+    "url" : "https://fhir.ee/Questionnaire/ExampleHDECLQuestionnaire",
     "version" : "0.1.0"
   },
   {
-    "id" : "Kusimustik",
+    "id" : "HDECLQuestionnaire",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.ee/StructureDefinition/Kusimustik",
+    "url" : "https://fhir.ee/StructureDefinition/HDECLQuestionnaire",
     "version" : "0.1.0",
-    "name" : "Kusimustik"
+    "name" : "HDECLQuestionnaire"
+  },
+  {
+    "id" : "HDECLQuestionnaireResponse",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/HDECLQuestionnaireResponse",
+    "version" : "0.1.0",
+    "name" : "HDECLQuestionnaireResponse"
   },
   {
     "id" : "MyPatient",
@@ -25,5 +32,19 @@
     "url" : "https://fhir.ee/StructureDefinition/MyPatient",
     "version" : "0.1.0",
     "name" : "MyPatient"
+  },
+  {
+    "id" : "authorization-type",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/authorization-type",
+    "version" : "0.1.0",
+    "name" : "AuthorizationTypeAndId"
+  },
+  {
+    "id" : "response-expiration",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/response-expiration",
+    "version" : "0.1.0",
+    "name" : "ResponseExpiration"
   }
 ]

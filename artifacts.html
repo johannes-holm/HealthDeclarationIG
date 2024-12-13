@@ -131,7 +131,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Example: Example Instances</a>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -147,11 +150,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-Kusimustik.html"
-                  title="StructureDefinition/Kusimustik">Kusimustik</a>
+               <a href="StructureDefinition-HDECLQuestionnaire.html"
+                  title="StructureDefinition/HDECLQuestionnaire">HDECLQuestionnaire</a>
             </td>
             <td>
-<p>esimene katsetus questionnaire ressursiga</p>
+<p>Tervisedeklaratsiooni küsimustiku profiil</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-HDECLQuestionnaireResponse.html"
+                  title="StructureDefinition/HDECLQuestionnaireResponse">HDECLQuestionnaireResponse</a>
+            </td>
+            <td>
+<p>Tervisedeklaratsiooni küsimustiku vastuse profiil</p>
 </td>
          </tr>
          <tr>
@@ -166,6 +178,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-authorization-type.html"
+                  title="StructureDefinition/authorization-type">Authorization type and identifier</a>
+            </td>
+            <td>
+<p>Volitatud töötaja volituse andmed (volituse number ja liik)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-response-expiration.html"
+                  title="StructureDefinition/response-expiration">Response Expiration</a>
+            </td>
+            <td>
+<p>Indicates the date on which this QuestionnaireResponse is considered expired.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -173,11 +211,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Questionnaire-NaidisKusimustik.html"
-                  title="Questionnaire/NaidisKusimustik">NaidisKusimustik</a>
+               <a href="Questionnaire-ExampleHDECLQuestionnaire.html"
+                  title="Questionnaire/ExampleHDECLQuestionnaire">ExampleHDECLQuestionnaire</a>
             </td>
             <td>
-<p>Näidis andmestik küsimustikust</p>
+<p>Näidis tervisedeklaratsiooni andmestik</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.html"
+                  title="QuestionnaireResponse/ExampleHDECLQuestionnaireResponse">ExampleHDECLQuestionnaireResponse</a>
+            </td>
+            <td>
+<p>Näidis andmestik küsimustikust vastusest</p>
 </td>
          </tr>
          <tr>
@@ -186,6 +233,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>An example of a patient with a license to krill.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-katipiiriylene.html" title="Patient/katipiiriylene">QuestionnairePatient</a>
+            </td>
+            <td>
+<p>Patsient erinevate identifikaatoritega</p>
 </td>
          </tr>
       </tbody>
@@ -208,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest">TEHIK</a>.  Package ig-ee-healthdeclarationtest#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Dec 6, 2024 15:43+0200">2024-12-06</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest">TEHIK</a>.  Package ig-ee-healthdeclarationtest#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Dec 13, 2024 11:21+0200">2024-12-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

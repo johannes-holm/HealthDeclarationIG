@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 32, errors = 3, warn = 13, info = 1-->
+<!-- broken links = 67, errors = 4, warn = 20, info = 1-->
 <head>
   <title>HealthDeclarationTestIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,9 +36,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for HealthDeclarationTestIG</h1>
- <p>Generated Fri Dec 06 15:44:29 EET 2024, FHIR version 5.0.0 for ig-ee-healthdeclarationtest#0.1.0 (canonical = <a href="https://fhir.ee">https://fhir.ee</a> (<a href="https://fhir.ee/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Dec 13 11:23:08 EET 2024, FHIR version 5.0.0 for ig-ee-healthdeclarationtest#0.1.0 (canonical = <a href="https://fhir.ee">https://fhir.ee</a> (<a href="https://fhir.ee/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.7.5</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.7.5, which is out of date. The current version is v1.8.1 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ig-ee-healthdeclarationtest, Canonical = https://fhir.ee</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Publication Request:</td><td><ul><li>Package ID mismatch. This package is ig-ee-healthdeclarationtest but the website has null <img src="icon-error.gif" height="16px" width="16px"/></li>
@@ -61,23 +61,35 @@
   <li>
 hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-parameter-code.html">GuideParameterCode</a>
  (15 uses),     <a href="http://hl7.org/fhir/R5/questionnaire.html">Questionnaire</a>
- (22 uses),     <a href="http://hl7.org/fhir/R5/valueset-version-algorithm.html">VersionAlgorithm</a>
+ (23 uses),     <a href="http://hl7.org/fhir/R5/valueset-version-algorithm.html">VersionAlgorithm</a>
  (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-resource-types.html">ResourceType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-jurisdiction.html">JurisdictionValueSet</a>
  (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-questionnaire-questions.html">QuestionnaireQuestionCodes</a>
  (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-item-type.html">QuestionnaireItemType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-questionnaire-enable-operator.html">QuestionnaireItemOperator</a>
  (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a>
- (3 uses),     <a href="http://hl7.org/fhir/R5/valueset-questionnaire-enable-behavior.html">EnableWhenBehavior</a>
- (1 uses),     <a href="http://hl7.org/fhir/R5/organization.html">Organization</a>
- (3 uses),     <a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a>
- (1 uses),     <a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a>
- (1 uses),     <a href="http://hl7.org/fhir/R5/relatedperson.html">RelatedPerson</a>
- (1 uses)
+ (4 uses),     <a href="http://hl7.org/fhir/R5/valueset-questionnaire-enable-behavior.html">EnableWhenBehavior</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/questionnaireresponse.html">QuestionnaireResponse</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R5/valueset-common-tags.html">CommonTags</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/careplan.html">CarePlan</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/servicerequest.html">ServiceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/procedure.html">Procedure</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-questionnaire-answers-status.html">QuestionnaireResponseStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/encounter.html">Encounter</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/device.html">Device</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R5/relatedperson.html">RelatedPerson</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R5/organization.html">Organization</a>
+ (5 uses)
+  </li>
+  <li>
+hl7.fhir.uv.extensions.r5#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-structuredefinition-type-characteristics.html">SDTypeCharacteristics</a>
+ (2 uses)
   </li>
   <li>
 hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (4 uses)
+ (9 uses)
   </li>
 </ul>
 </td></tr>
@@ -86,14 +98,14 @@ hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 3, warn = 13, info = 1, broken links = 32</td></tr>
+ <tr><td>Summary:</td><td> errors = 4, warn = 20, info = 1, broken links = 67</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>35</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>70</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_ImplementationGuide-ig-ee-healthdeclarationtest"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\ImplementationGuide-ig-ee-healthdeclarationtest</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -101,14 +113,29 @@ hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_Patient-PatientExample"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\Patient-PatientExample</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_Patient-katipiiriylene"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\Patient-katipiiriylene</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_Questionnaire-NaidisKusimustik"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\Questionnaire-NaidisKusimustik</b></a></td><td><b>3</b></td><td><b>2</b></td><td><b>1</b></td>
+     <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_Questionnaire-ExampleHDECLQuestionnaire"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\Questionnaire-ExampleHDECLQuestionnaire</b></a></td><td><b>3</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_QuestionnaireResponse-ExampleHDECLQuestionnaireResponse"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\QuestionnaireResponse-ExampleHDECLQuestionnaireResponse</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-Kusimustik"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\StructureDefinition-Kusimustik</b></a></td><td><b>0</b></td><td><b>8</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-HDECLQuestionnaire"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\StructureDefinition-HDECLQuestionnaire</b></a></td><td><b>0</b></td><td><b>8</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-HDECLQuestionnaireResponse"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\StructureDefinition-HDECLQuestionnaireResponse</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-MyPatient"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\StructureDefinition-MyPatient</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-authorization-type"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\StructureDefinition-authorization-type</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-response-expiration"><b>C:\Users\aa.johannes.holm\johannese-health-dec-kaust\ig-ee-health-declaration-test\HealthDeclarationTestIG\fsh-generated\resources\StructureDefinition-response-expiration</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -132,49 +159,106 @@ hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b><a href="Patient-PatientExample.xml.html#l350">output\Patient-PatientExample&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 208, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="Questionnaire-NaidisKusimustik-testing.html#l318">output\Questionnaire-NaidisKusimustik-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 216, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="Patient-katipiiriylene.change.history.html#l287">output\Patient-katipiiriylene&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 185, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="Questionnaire-NaidisKusimustik.change.history.html#l287">output\Questionnaire-NaidisKusimustik&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 185, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="Patient-katipiiriylene.html#l315">output\Patient-katipiiriylene&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 194, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="Questionnaire-NaidisKusimustik.html#l2688">output\Questionnaire-NaidisKusimustik&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 347, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="Patient-katipiiriylene.json.html#l348">output\Patient-katipiiriylene&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 218, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="Questionnaire-NaidisKusimustik.json.html#l3069">output\Questionnaire-NaidisKusimustik&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1622, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="Patient-katipiiriylene.ttl.html#l372">output\Patient-katipiiriylene&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 222, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="Questionnaire-NaidisKusimustik.ttl.html#l5423">output\Questionnaire-NaidisKusimustik&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1150, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="Patient-katipiiriylene.xml.html#l374">output\Patient-katipiiriylene&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 212, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="Questionnaire-NaidisKusimustik.xml.html#l5588">output\Questionnaire-NaidisKusimustik&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1485, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="Questionnaire-ExampleHDECLQuestionnaire-testing.html#l318">output\Questionnaire-ExampleHDECLQuestionnaire-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 216, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-Kusimustik-definitions.html#l9743">output\StructureDefinition-Kusimustik-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 779, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="Questionnaire-ExampleHDECLQuestionnaire.change.history.html#l287">output\Questionnaire-ExampleHDECLQuestionnaire&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 185, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-Kusimustik-examples.html#l344">output\StructureDefinition-Kusimustik-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 253, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="Questionnaire-ExampleHDECLQuestionnaire.html#l4883">output\Questionnaire-ExampleHDECLQuestionnaire&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 451, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-Kusimustik-mappings.html#l906">output\StructureDefinition-Kusimustik-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 329, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="Questionnaire-ExampleHDECLQuestionnaire.json.html#l5622">output\Questionnaire-ExampleHDECLQuestionnaire&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2928, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-Kusimustik-testing.html#l340">output\StructureDefinition-Kusimustik-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 249, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="Questionnaire-ExampleHDECLQuestionnaire.ttl.html#l10178">output\Questionnaire-ExampleHDECLQuestionnaire&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2008, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-Kusimustik.html#l8597">output\StructureDefinition-Kusimustik&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2264, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="Questionnaire-ExampleHDECLQuestionnaire.xml.html#l10499">output\Questionnaire-ExampleHDECLQuestionnaire&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2666, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-Kusimustik.profile.history.html#l313">output\StructureDefinition-Kusimustik&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 231, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.change.history.html#l287">output\QuestionnaireResponse-ExampleHDECLQuestionnaireResponse&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 185, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-Kusimustik.profile.json.html#l7147">output\StructureDefinition-Kusimustik&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3815, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.html#l512">output\QuestionnaireResponse-ExampleHDECLQuestionnaireResponse&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 208, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-Kusimustik.profile.ttl.html#l13425">output\StructureDefinition-Kusimustik&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2760, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.json.html#l537">output\QuestionnaireResponse-ExampleHDECLQuestionnaireResponse&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 348, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-Kusimustik.profile.xml.html#l13410">output\StructureDefinition-Kusimustik&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3529, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.ttl.html#l671">output\QuestionnaireResponse-ExampleHDECLQuestionnaireResponse&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 290, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.xml.html#l689">output\QuestionnaireResponse-ExampleHDECLQuestionnaireResponse&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 324, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaire-definitions.html#l9743">output\StructureDefinition-HDECLQuestionnaire-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 779, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaire-examples.html#l344">output\StructureDefinition-HDECLQuestionnaire-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 253, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaire-mappings.html#l906">output\StructureDefinition-HDECLQuestionnaire-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 329, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaire-testing.html#l340">output\StructureDefinition-HDECLQuestionnaire-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 249, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaire.html#l8597">output\StructureDefinition-HDECLQuestionnaire&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2264, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaire.profile.history.html#l313">output\StructureDefinition-HDECLQuestionnaire&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 231, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaire.profile.json.html#l7147">output\StructureDefinition-HDECLQuestionnaire&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3815, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaire.profile.ttl.html#l13425">output\StructureDefinition-HDECLQuestionnaire&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2760, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaire.profile.xml.html#l13410">output\StructureDefinition-HDECLQuestionnaire&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3529, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaireResponse-definitions.html#l6516">output\StructureDefinition-HDECLQuestionnaireResponse-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 566, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaireResponse-examples.html#l344">output\StructureDefinition-HDECLQuestionnaireResponse-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 253, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaireResponse-mappings.html#l650">output\StructureDefinition-HDECLQuestionnaireResponse-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 290, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaireResponse-testing.html#l340">output\StructureDefinition-HDECLQuestionnaireResponse-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 249, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaireResponse.html#l6071">output\StructureDefinition-HDECLQuestionnaireResponse&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1822, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaireResponse.profile.history.html#l313">output\StructureDefinition-HDECLQuestionnaireResponse&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 231, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaireResponse.profile.json.html#l4369">output\StructureDefinition-HDECLQuestionnaireResponse&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2324, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaireResponse.profile.ttl.html#l8058">output\StructureDefinition-HDECLQuestionnaireResponse&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1756, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-HDECLQuestionnaireResponse.profile.xml.html#l8019">output\StructureDefinition-HDECLQuestionnaireResponse&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2157, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b><a href="StructureDefinition-MyPatient-definitions.html#l5351">output\StructureDefinition-MyPatient-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 545, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
@@ -204,13 +288,61 @@ hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b><a href="StructureDefinition-MyPatient.profile.xml.html#l8706">output\StructureDefinition-MyPatient&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2330, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="artifacts.html#l382">output\artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 211, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="StructureDefinition-authorization-type-definitions.html#l3056">output\StructureDefinition-authorization-type-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 317, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-authorization-type-mappings.html#l379">output\StructureDefinition-authorization-type-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 240, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-authorization-type-testing.html#l334">output\StructureDefinition-authorization-type-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 239, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-authorization-type.html#l4028">output\StructureDefinition-authorization-type&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1287, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-authorization-type.profile.history.html#l307">output\StructureDefinition-authorization-type&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 221, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-authorization-type.profile.json.html#l1237">output\StructureDefinition-authorization-type&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 787, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-authorization-type.profile.ttl.html#l2025">output\StructureDefinition-authorization-type&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 574, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-authorization-type.profile.xml.html#l2154">output\StructureDefinition-authorization-type&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 725, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-response-expiration-definitions.html#l1850">output\StructureDefinition-response-expiration-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 309, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-response-expiration-mappings.html#l372">output\StructureDefinition-response-expiration-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 239, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-response-expiration-testing.html#l334">output\StructureDefinition-response-expiration-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 239, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-response-expiration.html#l1330">output\StructureDefinition-response-expiration&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 607, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-response-expiration.profile.history.html#l307">output\StructureDefinition-response-expiration&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 221, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-response-expiration.profile.json.html#l985">output\StructureDefinition-response-expiration&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 578, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-response-expiration.profile.ttl.html#l1533">output\StructureDefinition-response-expiration&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 488, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-response-expiration.profile.xml.html#l1506">output\StructureDefinition-response-expiration&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 525, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="artifacts.html#l480">output\artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 266, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b><a href="index.html#l311">output\index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 199, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="toc.html#l313">output\toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 141, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="toc.html#l353">output\toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 141, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest' for &quot;TEHIK&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
@@ -243,37 +375,63 @@ hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    </tr>
 </table>
 <hr/>
-<a name="C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_Questionnaire-NaidisKusimustik"> </a>
-<h2><a href="Questionnaire-NaidisKusimustik.html">fsh-generated\resources\Questionnaire-NaidisKusimustik.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Questionnaire: Validated against <i>this.</i><a href="StructureDefinition-Kusimustik.html">Kusimustik</a></li></ul>
+<a name="C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_Patient-katipiiriylene"> </a>
+<h2><a href="Patient-katipiiriylene.html">fsh-generated\resources\Patient-katipiiriylene.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/patient.html">Patient</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_Questionnaire-ExampleHDECLQuestionnaire"> </a>
+<h2><a href="Questionnaire-ExampleHDECLQuestionnaire.html">fsh-generated\resources\Questionnaire-ExampleHDECLQuestionnaire.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Questionnaire: Validated against <i>this.</i><a href="StructureDefinition-HDECLQuestionnaire.html">HDECLQuestionnaire</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire (l1/c217723)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Questionnaire.url: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/Kusimustik|0.1.0)</b></td>
+     <td><b>Questionnaire (l1/c419831)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Questionnaire.url: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/HDECLQuestionnaire|0.1.0)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire (l1/c217723)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Questionnaire.publisher: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/Kusimustik|0.1.0)</b></td>
+     <td><b>Questionnaire (l1/c419831)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Questionnaire.publisher: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/HDECLQuestionnaire|0.1.0)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire (l1/c217723)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Questionnaire.contact: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/Kusimustik|0.1.0)</b></td>
+     <td><b>Questionnaire (l1/c419831)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Questionnaire.contact: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/HDECLQuestionnaire|0.1.0)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Questionnaire.code[0] (l1/c201346)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+     <td><b>Questionnaire.code[0] (l1/c387687)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.item[2]&#8203;.text (l1&#8203;/c202317)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Kui olete loobunud suitsetamisest, siis millal loobusite? '</b></td>
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.item[1]&#8203;.item[2]&#8203;.text (l1&#8203;/c388658)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Kui olete loobunud suitsetamisest, siis millal loobusite? '</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Resource</b></td><td><b>information</b></td><td title=""><b>This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-Kusimustik"> </a>
-<h2><a href="StructureDefinition-Kusimustik.html">fsh-generated\resources\StructureDefinition-Kusimustik.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+<a name="C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_QuestionnaireResponse-ExampleHDECLQuestionnaireResponse"> </a>
+<h2><a href="QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.html">fsh-generated\resources\QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>QuestionnaireResponse: Validated against <i>this.</i><a href="StructureDefinition-HDECLQuestionnaireResponse.html">HDECLQuestionnaireResponse</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.questionnaire (l143&#8203;/c76)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE"><b>Canonical URL 'https://fhir.ee/StructureDefinition/HDECLQuestionnaire' refers to a resource that has the wrong type. Found StructureDefinition expecting one of [Questionnaire]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>QuestionnaireResponse (l143/c76)</b></td><td><b>warning</b></td><td title="Questionnaire_QR_Q_NotFound"><b>The questionnaire 'https://fhir.ee/StructureDefinition/HDECLQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-HDECLQuestionnaire"> </a>
+<h2><a href="StructureDefinition-HDECLQuestionnaire.html">fsh-generated\resources\StructureDefinition-HDECLQuestionnaire.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -305,13 +463,61 @@ hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    </tr>
 </table>
 <hr/>
+<a name="C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-HDECLQuestionnaireResponse"> </a>
+<h2><a href="StructureDefinition-HDECLQuestionnaireResponse.html">fsh-generated\resources\StructureDefinition-HDECLQuestionnaireResponse.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[10]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'QuestionnaireResponse.meta.tag' binds to the value set 'http://hl7.org/fhir/ValueSet/common-tags' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[40]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'QuestionnaireResponse.item.answer.value[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/questionnaire-answers' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-MyPatient"> </a>
-<h2><a href="StructureDefinition-MyPatient.html">fsh-generated\resources\StructureDefinition-MyPatient.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-MyPatient.html">fsh-generated\resources\StructureDefinition-MyPatient.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-authorization-type"> </a>
+<h2><a href="StructureDefinition-authorization-type.html">fsh-generated\resources\StructureDefinition-authorization-type.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for authorization-type: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/fhir&#8203;.ee&#8203;/StructureDefinition&#8203;/authorization-type')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_aa.johannes.holm_johannese-health-dec-kaust_ig-ee-health-declaration-test_HealthDeclarationTestIG_fsh-generated_resources_StructureDefinition-response-expiration"> </a>
+<h2><a href="StructureDefinition-response-expiration.html">fsh-generated\resources\StructureDefinition-response-expiration.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for response-expiration: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/fhir&#8203;.ee&#8203;/StructureDefinition&#8203;/response-expiration')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -319,11 +525,27 @@ hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="Questionnaire_QR_Q_NotFound"> </a>
+<h2>Questionnaire_QR_Q_NotFound</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.html">fsh-generated\resources\QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.json</a></td><td><b>The questionnaire 'https://fhir.ee/StructureDefinition/HDECLQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
 <h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="Questionnaire-NaidisKusimustik.html">fsh-generated\resources\Questionnaire-NaidisKusimustik.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+     <td><a href="Questionnaire-ExampleHDECLQuestionnaire.html">fsh-generated\resources\Questionnaire-ExampleHDECLQuestionnaire.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.html">fsh-generated\resources\QuestionnaireResponse-ExampleHDECLQuestionnaireResponse.json</a></td><td><b>Canonical URL 'https://fhir.ee/StructureDefinition/HDECLQuestionnaire' refers to a resource that has the wrong type. Found StructureDefinition expecting one of [Questionnaire]</b></td>
    </tr>
 </table>
 <hr/>
@@ -331,7 +553,7 @@ hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 <h2>Type_Specific_Checks_DT_String_WS</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="Questionnaire-NaidisKusimustik.html">fsh-generated\resources\Questionnaire-NaidisKusimustik.json</a></td><td><b>value should not start or finish with whitespace 'Kui olete loobunud suitsetamisest, siis millal loobusite? '</b></td>
+     <td><a href="Questionnaire-ExampleHDECLQuestionnaire.html">fsh-generated\resources\Questionnaire-ExampleHDECLQuestionnaire.json</a></td><td><b>value should not start or finish with whitespace 'Kui olete loobunud suitsetamisest, siis millal loobusite? '</b></td>
    </tr>
 </table>
 <hr/>
@@ -339,13 +561,13 @@ hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 <h2>Validation_VAL_Profile_Maximum</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Questionnaire-NaidisKusimustik.html">fsh-generated\resources\Questionnaire-NaidisKusimustik.json</a></td><td><b>Questionnaire.url: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/Kusimustik|0.1.0)</b></td>
+     <td><a href="Questionnaire-ExampleHDECLQuestionnaire.html">fsh-generated\resources\Questionnaire-ExampleHDECLQuestionnaire.json</a></td><td><b>Questionnaire.url: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/HDECLQuestionnaire|0.1.0)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Questionnaire-NaidisKusimustik.html">fsh-generated\resources\Questionnaire-NaidisKusimustik.json</a></td><td><b>Questionnaire.publisher: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/Kusimustik|0.1.0)</b></td>
+     <td><a href="Questionnaire-ExampleHDECLQuestionnaire.html">fsh-generated\resources\Questionnaire-ExampleHDECLQuestionnaire.json</a></td><td><b>Questionnaire.publisher: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/HDECLQuestionnaire|0.1.0)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Questionnaire-NaidisKusimustik.html">fsh-generated\resources\Questionnaire-NaidisKusimustik.json</a></td><td><b>Questionnaire.contact: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/Kusimustik|0.1.0)</b></td>
+     <td><a href="Questionnaire-ExampleHDECLQuestionnaire.html">fsh-generated\resources\Questionnaire-ExampleHDECLQuestionnaire.json</a></td><td><b>Questionnaire.contact: max allowed = 0, but found 1 (from https://fhir.ee/StructureDefinition/HDECLQuestionnaire|0.1.0)</b></td>
    </tr>
 </table>
 </body>

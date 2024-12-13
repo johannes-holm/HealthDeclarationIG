@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "HealthDeclarationTestIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-06T15:43:10+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-13T11:21:42+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "TEHIK"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "TEHIK" ] ;
@@ -61,14 +61,70 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/authorization-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/authorization-type" ]
+       ] ;
+       fhir:name [ fhir:v "Authorization type and identifier" ] ;
+       fhir:description [ fhir:v "Volitatud töötaja volituse andmed (volituse number ja liik)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Questionnaire/ExampleHDECLQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/ExampleHDECLQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleHDECLQuestionnaire" ] ;
+       fhir:description [ fhir:v "Näidis tervisedeklaratsiooni andmestik" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/HDECLQuestionnaire"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/HDECLQuestionnaire>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "QuestionnaireResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/QuestionnaireResponse/ExampleHDECLQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/ExampleHDECLQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleHDECLQuestionnaireResponse" ] ;
+       fhir:description [ fhir:v "Näidis andmestik küsimustikust vastusest" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/HDECLQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/HDECLQuestionnaireResponse>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.ee/StructureDefinition/Kusimustik> ;
-         fhir:reference [ fhir:v "StructureDefinition/Kusimustik" ]
+         fhir:link <https://fhir.ee/StructureDefinition/HDECLQuestionnaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/HDECLQuestionnaire" ]
        ] ;
-       fhir:name [ fhir:v "Kusimustik" ] ;
-       fhir:description [ fhir:v "esimene katsetus questionnaire ressursiga" ] ;
+       fhir:name [ fhir:v "HDECLQuestionnaire" ] ;
+       fhir:description [ fhir:v "Tervisedeklaratsiooni küsimustiku profiil" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/HDECLQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/HDECLQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "HDECLQuestionnaireResponse" ] ;
+       fhir:description [ fhir:v "Tervisedeklaratsiooni küsimustiku vastuse profiil" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -85,22 +141,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Questionnaire" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.ee/Questionnaire/NaidisKusimustik> ;
-         fhir:reference [ fhir:v "Questionnaire/NaidisKusimustik" ]
-       ] ;
-       fhir:name [ fhir:v "NaidisKusimustik" ] ;
-       fhir:description [ fhir:v "Näidis andmestik küsimustikust" ] ;
-       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:profile ( [
-         fhir:v "https://fhir.ee/StructureDefinition/Kusimustik"^^xsd:anyURI ;
-         fhir:link <https://fhir.ee/StructureDefinition/Kusimustik>
-       ] )
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
@@ -114,6 +154,30 @@
          fhir:v "https://fhir.ee/StructureDefinition/MyPatient"^^xsd:anyURI ;
          fhir:link <https://fhir.ee/StructureDefinition/MyPatient>
        ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Patient/katipiiriylene> ;
+         fhir:reference [ fhir:v "Patient/katipiiriylene" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnairePatient" ] ;
+       fhir:description [ fhir:v "Patsient erinevate identifikaatoritega" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/response-expiration> ;
+         fhir:reference [ fhir:v "StructureDefinition/response-expiration" ]
+       ] ;
+       fhir:name [ fhir:v "Response Expiration" ] ;
+       fhir:description [ fhir:v "Indicates the date on which this QuestionnaireResponse is considered expired." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:source [ fhir:v "toc.html"^^xsd:anyURI ] ;

@@ -2,12 +2,89 @@
   "package": "ig-ee-healthdeclarationtest",
   "version": "0.1.0",
   "fhirVersion": "5.0.0",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://fhir.ee/StructureDefinition/authorization-type",
+      "title": "Authorization type and identifier",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta",
+        "id",
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/StructureDefinition/response-expiration",
+      "title": "Response Expiration",
+      "types": [
+        "date",
+        "date"
+      ]
+    }
+  ],
   "profiles": {
     "Questionnaire": [
       {
-        "url": "https://fhir.ee/StructureDefinition/Kusimustik",
-        "title": "Kusimustik"
+        "url": "https://fhir.ee/StructureDefinition/HDECLQuestionnaire",
+        "title": "HDECLQuestionnaire"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/HDECLQuestionnaireResponse",
+        "title": "HDECLQuestionnaireResponse"
       }
     ],
     "Patient": [
@@ -39,6 +116,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
+      "StructureDefinition"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
     ],
@@ -47,6 +127,12 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://fhir.ee/StructureDefinition/authorization-type": [
+      "QuestionnaireResponse"
+    ],
+    "https://fhir.ee/StructureDefinition/response-expiration": [
+      "QuestionnaireResponse"
     ]
   }
 }
