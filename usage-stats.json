@@ -77,14 +77,14 @@
   "profiles": {
     "Questionnaire": [
       {
-        "url": "https://fhir.ee/StructureDefinition/HDECLQuestionnaire",
-        "title": "HDECLQuestionnaire"
+        "url": "https://fhir.ee/StructureDefinition/EEHealthDeclaration",
+        "title": "EEHealthDeclaration"
       }
     ],
     "QuestionnaireResponse": [
       {
-        "url": "https://fhir.ee/StructureDefinition/HDECLQuestionnaireResponse",
-        "title": "HDECLQuestionnaireResponse"
+        "url": "https://fhir.ee/StructureDefinition/EEHealthDeclarationResponse",
+        "title": "EEHealthDeclarationResponse"
       }
     ],
     "Patient": [
@@ -127,9 +127,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "https://fhir.ee/StructureDefinition/authorization-type": [
-      "QuestionnaireResponse"
     ],
     "https://fhir.ee/StructureDefinition/response-expiration": [
       "QuestionnaireResponse"

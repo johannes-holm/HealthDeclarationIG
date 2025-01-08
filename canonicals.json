@@ -1,5 +1,11 @@
 [
   {
+    "id" : "ExampleEEHealthDeclaration",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.ee/StructureDefinition/EEHealthDeclaration",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "ig-ee-healthdeclarationtest",
     "type" : "ImplementationGuide",
     "url" : "https://fhir.ee/ImplementationGuide/ig-ee-healthdeclarationtest",
@@ -7,24 +13,18 @@
     "name" : "HealthDeclarationTestIG"
   },
   {
-    "id" : "ExampleHDECLQuestionnaire",
-    "type" : "Questionnaire",
-    "url" : "https://fhir.ee/Questionnaire/ExampleHDECLQuestionnaire",
-    "version" : "0.1.0"
+    "id" : "EEHealthDeclaration",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/EEHealthDeclaration",
+    "version" : "0.1.0",
+    "name" : "EEHealthDeclaration"
   },
   {
-    "id" : "HDECLQuestionnaire",
+    "id" : "EEHealthDeclarationResponse",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.ee/StructureDefinition/HDECLQuestionnaire",
+    "url" : "https://fhir.ee/StructureDefinition/EEHealthDeclarationResponse",
     "version" : "0.1.0",
-    "name" : "HDECLQuestionnaire"
-  },
-  {
-    "id" : "HDECLQuestionnaireResponse",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.ee/StructureDefinition/HDECLQuestionnaireResponse",
-    "version" : "0.1.0",
-    "name" : "HDECLQuestionnaireResponse"
+    "name" : "EEHealthDeclarationResponse"
   },
   {
     "id" : "MyPatient",

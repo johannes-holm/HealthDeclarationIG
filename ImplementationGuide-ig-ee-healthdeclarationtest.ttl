@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "HealthDeclarationTestIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-13T11:21:42+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-08T16:54:43+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "TEHIK"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "TEHIK" ] ;
@@ -73,45 +73,13 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Questionnaire" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.ee/Questionnaire/ExampleHDECLQuestionnaire> ;
-         fhir:reference [ fhir:v "Questionnaire/ExampleHDECLQuestionnaire" ]
-       ] ;
-       fhir:name [ fhir:v "ExampleHDECLQuestionnaire" ] ;
-       fhir:description [ fhir:v "Näidis tervisedeklaratsiooni andmestik" ] ;
-       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:profile ( [
-         fhir:v "https://fhir.ee/StructureDefinition/HDECLQuestionnaire"^^xsd:anyURI ;
-         fhir:link <https://fhir.ee/StructureDefinition/HDECLQuestionnaire>
-       ] )
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "QuestionnaireResponse" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.ee/QuestionnaireResponse/ExampleHDECLQuestionnaireResponse> ;
-         fhir:reference [ fhir:v "QuestionnaireResponse/ExampleHDECLQuestionnaireResponse" ]
-       ] ;
-       fhir:name [ fhir:v "ExampleHDECLQuestionnaireResponse" ] ;
-       fhir:description [ fhir:v "Näidis andmestik küsimustikust vastusest" ] ;
-       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:profile ( [
-         fhir:v "https://fhir.ee/StructureDefinition/HDECLQuestionnaireResponse"^^xsd:anyURI ;
-         fhir:link <https://fhir.ee/StructureDefinition/HDECLQuestionnaireResponse>
-       ] )
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.ee/StructureDefinition/HDECLQuestionnaire> ;
-         fhir:reference [ fhir:v "StructureDefinition/HDECLQuestionnaire" ]
+         fhir:link <https://fhir.ee/StructureDefinition/EEHealthDeclaration> ;
+         fhir:reference [ fhir:v "StructureDefinition/EEHealthDeclaration" ]
        ] ;
-       fhir:name [ fhir:v "HDECLQuestionnaire" ] ;
+       fhir:name [ fhir:v "EEHealthDeclaration" ] ;
        fhir:description [ fhir:v "Tervisedeklaratsiooni küsimustiku profiil" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -120,12 +88,44 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.ee/StructureDefinition/HDECLQuestionnaireResponse> ;
-         fhir:reference [ fhir:v "StructureDefinition/HDECLQuestionnaireResponse" ]
+         fhir:link <https://fhir.ee/StructureDefinition/EEHealthDeclarationResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/EEHealthDeclarationResponse" ]
        ] ;
-       fhir:name [ fhir:v "HDECLQuestionnaireResponse" ] ;
+       fhir:name [ fhir:v "EEHealthDeclarationResponse" ] ;
        fhir:description [ fhir:v "Tervisedeklaratsiooni küsimustiku vastuse profiil" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Questionnaire/ExampleEEHealthDeclaration> ;
+         fhir:reference [ fhir:v "Questionnaire/ExampleEEHealthDeclaration" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleEEHealthDeclaration" ] ;
+       fhir:description [ fhir:v "Näidis tervisedeklaratsiooni andmestik" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/EEHealthDeclaration"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/EEHealthDeclaration>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "QuestionnaireResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/QuestionnaireResponse/ExampleEEHealthDeclarationResponse> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/ExampleEEHealthDeclarationResponse" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleEEHealthDeclarationResponse" ] ;
+       fhir:description [ fhir:v "Näidis andmestik küsimustikust vastusest" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/EEHealthDeclarationResponse"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/EEHealthDeclarationResponse>
+       ] )
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
